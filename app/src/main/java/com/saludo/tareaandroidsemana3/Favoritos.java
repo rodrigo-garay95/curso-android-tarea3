@@ -14,7 +14,6 @@ import java.util.ArrayList;
 public class Favoritos extends AppCompatActivity {
 
     private Toolbar miActionBar;
-    private ImageView imgAtras;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +24,6 @@ public class Favoritos extends AppCompatActivity {
         setSupportActionBar(miActionBar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        /*imgAtras = (ImageView) findViewById(R.id.imgPieMascota);
-        imgAtras.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });*/
 
         ArrayList<Mascota> mascotas = new ArrayList<Mascota>();
         mascotas.add(new Mascota("Gato", R.drawable.cat_img, 4));
