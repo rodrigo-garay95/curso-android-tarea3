@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         mascotas.add(new Mascota("Perro", R.drawable.dog_img, 0));
         mascotas.add(new Mascota("Conejo", R.drawable.rabbit_img, 0));
         mascotas.add(new Mascota("Hamster", R.drawable.hamster_img, 0));
-        mascotas.add(new Mascota("Tortuga", R.drawable.tortoise_img, 0));
+        mascotas.add(new Mascota("Tortuga", R.drawable.turtle_img, 0));
 
         rvMascotas = (RecyclerView) findViewById(R.id.rvMascotas);
 
