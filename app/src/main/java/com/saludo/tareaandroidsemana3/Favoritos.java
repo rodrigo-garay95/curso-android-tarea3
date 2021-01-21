@@ -24,13 +24,15 @@ public class Favoritos extends AppCompatActivity {
         miActionBar = (Toolbar) findViewById(R.id.miActionBarFavoritos);
         setSupportActionBar(miActionBar);
 
-        imgAtras = (ImageView) findViewById(R.id.imgPieMascota);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        /*imgAtras = (ImageView) findViewById(R.id.imgPieMascota);
         imgAtras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
-        });
+        });*/
 
         ArrayList<Mascota> mascotas = new ArrayList<Mascota>();
         mascotas.add(new Mascota("Gato", R.drawable.cat_img, 4));
