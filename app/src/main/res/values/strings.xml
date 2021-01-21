@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Petagram</string>
+    <string name="nombre_mascota">Mascota</string>
+    <string name="cantidad_puntos">0</string>
+</resources>
