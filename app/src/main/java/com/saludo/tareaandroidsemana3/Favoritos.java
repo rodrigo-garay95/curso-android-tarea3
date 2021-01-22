@@ -26,10 +26,10 @@ public class Favoritos extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ArrayList<Mascota> mascotas = new ArrayList<Mascota>();
-        mascotas.add(new Mascota("Gato", R.drawable.cat_img, 4));
-        mascotas.add(new Mascota("Perro", R.drawable.dog_img, 3));
+        mascotas.add(new Mascota("Hamster", R.drawable.hamster_img, 4));
+        mascotas.add(new Mascota("Gato", R.drawable.cat_img, 3));
+        mascotas.add(new Mascota("Perro", R.drawable.dog_img, 2));
         mascotas.add(new Mascota("Conejo", R.drawable.rabbit_img, 2));
-        mascotas.add(new Mascota("Hamster", R.drawable.hamster_img, 2));
         mascotas.add(new Mascota("Tortuga", R.drawable.turtle_img, 1));
 
         RecyclerView rvMascotasFav = (RecyclerView) findViewById(R.id.rvMascotasFav);

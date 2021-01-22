@@ -32,13 +32,12 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.MascotaViewHolder>
         Mascota mascota = mascotas.get(position);
         holder.imgMascota.setImageResource(mascota.getMascota());
         holder.txtNombre.setText(mascota.getNombre());
-        holder.txtPuntos.setText(String.valueOf(mascota.getPuntos()));
-
+        holder.txtLike.setText(String.valueOf(mascota.getLike()));
         holder.imgAbajo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mascota.setPuntos(mascota.getPuntos() + 1);
-                holder.txtPuntos.setText(String.valueOf(mascota.getPuntos()));
+                mascota.setLike(mascota.getLike() + 1);
+                holder.txtLike.setText(String.valueOf(mascota.getLike()));
                 Snackbar.make(v, "+1 Like para " + mascota.getNombre(), Snackbar.LENGTH_LONG)
                         .setBackgroundTint(v.getResources().getColor(R.color.green_light))
                         .setTextColor(v.getResources().getColor(R.color.black))
@@ -46,12 +45,12 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.MascotaViewHolder>
                         .setAction("Deshacer", new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                mascota.setPuntos(mascota.getPuntos() - 1);
+                                mascota.setLike(mascota.getLike() - 1);
                                 Snackbar.make(v, "Like revertido", Snackbar.LENGTH_SHORT)
                                         .setBackgroundTint(v.getResources().getColor(R.color.red_light))
                                         .setActionTextColor(v.getResources().getColor(R.color.black)).
                                         show();
-                                holder.txtPuntos.setText(String.valueOf(mascota.getPuntos()));
+                                holder.txtLike.setText(String.valueOf(mascota.getLike()));
                             }
                         })
                         .show();
@@ -67,7 +66,7 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.MascotaViewHolder>
 
     public static class MascotaViewHolder extends RecyclerView.ViewHolder {
         private ImageView imgMascota, imgArriba, imgAbajo;
-        private TextView txtNombre, txtPuntos;
+        private TextView txtNombre, txtLike;
 
         public MascotaViewHolder(View itemView) {
             super(itemView);
@@ -75,7 +74,7 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.MascotaViewHolder>
             imgArriba = (ImageView) itemView.findViewById(R.id.imgArriba);
             imgAbajo = (ImageView) itemView.findViewById(R.id.imgAbajo);
             txtNombre = (TextView) itemView.findViewById(R.id.txtNombre);
-            txtPuntos = (TextView) itemView.findViewById(R.id.txtPuntos);
+            txtLike = (TextView) itemView.findViewById(R.id.txtLike);
         }
     }
 

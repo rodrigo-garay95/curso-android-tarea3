@@ -3,12 +3,12 @@ package com.saludo.tareaandroidsemana3;
 public class Mascota {
     private String nombre;
     private int mascota;
-    private int puntos;
+    private int like;
 
-    public Mascota(String nombre, int mascota, int puntos) {
+    public Mascota(String nombre, int mascota, int like) {
         this.nombre = nombre;
         this.mascota = mascota;
-        this.puntos = puntos;
+        this.like = like;
     }
 
     public String getNombre() {
@@ -27,11 +27,11 @@ public class Mascota {
         this.mascota = mascota;
     }
 
-    public int getPuntos() {
-        return puntos;
+    public int getLike() {
+        return like;
     }
 
-    public void setPuntos(int puntos) {
-        this.puntos = puntos;
+    public void setLike(int like) {
+        this.like = like;
     }
 }
