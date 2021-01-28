@@ -28,11 +28,11 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(miActionBar);
 
         mascotas = new ArrayList<Mascota>();
-        mascotas.add(new Mascota("Gato", R.drawable.cat_img, 0));
-        mascotas.add(new Mascota("Perro", R.drawable.dog_img, 0));
-        mascotas.add(new Mascota("Conejo", R.drawable.rabbit_img, 0));
-        mascotas.add(new Mascota("Hamster", R.drawable.hamster_img, 0));
-        mascotas.add(new Mascota("Tortuga", R.drawable.turtle_img, 0));
+        mascotas.add(new Mascota("Bali", R.drawable.bali, 0));
+        mascotas.add(new Mascota("Kodi", R.drawable.kodi, 0));
+        mascotas.add(new Mascota("Sady", R.drawable.say, 0));
+        mascotas.add(new Mascota("Lobi", R.drawable.lobi, 0));
+        mascotas.add(new Mascota("Boss", R.drawable.boss, 0));
 
         rvMascotas = (RecyclerView) findViewById(R.id.rvMascotas);
 
